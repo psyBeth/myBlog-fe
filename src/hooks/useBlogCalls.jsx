@@ -1,9 +1,21 @@
-import React from 'react'
+import { useDispatch } from "react-redux";
+import { fetchStart, getSuccess } from "../features/blogSlice";
 
-const useBlogCalls = () => {
-  return (
-    <div>useBlogCalls</div>
-  )
-}
+const useBlogCall = () => {
+  const dispatch = useDispatch();
 
-export default useBlogCalls
+  const getBlogData = async (endpoint) => {
+    dispatch(fetchStart());
+    try {
+      const response = await fetch(`your_api_base_url/${endpoint}`);
+      const data = await response.json();
+      dispatch(getSuccess(data));
+    } catch (error) {
+      console.error("Error fetching blog data:", error);
+    }
+  };
+
+  return { getBlogData };
+};
+
+export default useBlogCall;
