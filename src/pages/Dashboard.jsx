@@ -1,8 +1,6 @@
-// import axios from "axios";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import BlogCard from "../components/blog/BlogCard";
-// import { fetchStart, getSuccess } from "../features/blogSlice";
 import useBlogCall from "../hooks/useBlogCalls";
 import { Grid } from "@mui/material";
 
@@ -13,10 +11,6 @@ const Dashboard = () => {
   useEffect(() => {
     getBlogData("blogs");
   }, []);
-
-  //   return <BlogCard />;
-  // };
-  // export default Dashboard;
 
   return (
     <Grid

@@ -8,9 +8,9 @@ import {
   IconButton,
 } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import YouTubeIcon from "@mui/icons-material/YouTube";
+import GithubIcon from "@mui/icons-material/GitHub";
+// import InstagramIcon from "@mui/icons-material/Instagram";
+// import YouTubeIcon from "@mui/icons-material/YouTube";
 const iconIn = {
   color: "black",
 
@@ -18,24 +18,24 @@ const iconIn = {
     color: "blue",
   },
 };
-const iconTw = {
+const iconGh = {
   color: "black",
   "&:hover": {
-    color: "#00acee",
+    color: "#593d88",
   },
 };
-const iconIns = {
-  color: "black",
-  "&:hover": {
-    color: "#E1306C",
-  },
-};
-const iconYu = {
-  color: "black",
-  "&:hover": {
-    color: "red",
-  },
-};
+// const iconIns = {
+//   color: "black",
+//   "&:hover": {
+//     color: "#E1306C",
+//   },
+// };
+// const iconYu = {
+//   color: "black",
+//   "&:hover": {
+//     color: "red",
+//   },
+// };
 
 const About = () => {
   return (
@@ -63,10 +63,10 @@ const About = () => {
         >
           <CardMedia
             sx={{ objectFit: "contain" }}
-            height={69}
+            height={150}
             component="img"
             alt="image"
-            image="https://hizliresim.com/fhm2hak"
+            image="https://i.pinimg.com/originals/42/b6/74/42b6748cff77bc863ebf418f621a1041.jpg"
           />
           <CardContent>
             <Typography
@@ -81,18 +81,16 @@ const About = () => {
             Full Stack Developer
           </Typography>
           <CardActions>
+            <a href="https://www.linkedin.com/in/betul-koru-2303192ab/" target="_blank" rel="noopener noreferrer">
             <IconButton>
               <LinkedInIcon sx={iconIn} fontSize="large" />
             </IconButton>
+            </a>
+            <a href="https://github.com/psyBeth" target="_blank" rel="noopener noreferrer">
             <IconButton>
-              <TwitterIcon sx={iconTw} fontSize="large" />
+              <GithubIcon sx={iconGh} fontSize="large" />
             </IconButton>
-            <IconButton>
-              <InstagramIcon fontSize="large" sx={iconIns} />
-            </IconButton>
-            <IconButton>
-              <YouTubeIcon fontSize="large" sx={iconYu} />
-            </IconButton>
+            </a>
           </CardActions>
         </Card>
       </Grid>
@@ -101,6 +99,3 @@ const About = () => {
 };
 
 export default About;
-
-//! links will be added
-//! image will be adjusted
