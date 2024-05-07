@@ -82,14 +82,14 @@ const About = () => {
           </Typography>
           <CardActions>
             <a href="https://www.linkedin.com/in/betul-koru-2303192ab/" target="_blank" rel="noopener noreferrer">
-            <IconButton>
-              <LinkedInIcon sx={iconIn} fontSize="large" />
-            </IconButton>
+              <IconButton>
+                <LinkedInIcon sx={iconIn} fontSize="large" />
+              </IconButton>
             </a>
             <a href="https://github.com/psyBeth" target="_blank" rel="noopener noreferrer">
-            <IconButton>
-              <GithubIcon sx={iconGh} fontSize="large" />
-            </IconButton>
+              <IconButton>
+                <GithubIcon sx={iconGh} fontSize="large" />
+              </IconButton>
             </a>
           </CardActions>
         </Card>
